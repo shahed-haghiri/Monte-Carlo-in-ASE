@@ -32,7 +32,7 @@ def metropolis(E_i, E_f, T):
     dE = E_f - E_i
     if dE < 0:
         return True
-    elif random_num > np.exp(-dE/(units.kB * T)):
+    elif random_num < np.exp(-dE/(units.kB * T)):
         return True
     return False
 
