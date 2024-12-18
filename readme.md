@@ -4,4 +4,8 @@
 - implemented simulated annealing with a linear decaying temperature
 - steps and starting temp can be changed of course
 - also has a dynamic step size, if acceptance rate is <30%, decrease step size by 10%, and if its above 50% increase it by 10%
+- stops early if the temperature gets to 20K
+- stops early if the dE is < 1e-6 eV
 - Fun little project to test how to do monte carlo
+- to run the code, have the molecule.xyz file in the same directory and just run the python script
+- after running, the code spits out an ASE trajectory file, and xyz trajectory file and the final geometry
